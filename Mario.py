@@ -1,6 +1,6 @@
 import os
 import sys
-from Louise import Louise
+from Luigi import Luigi
 from xml.etree import ElementTree
 
 class Mario:
@@ -35,16 +35,16 @@ class Mario:
 
 	def get_fail_script_node(self, mergee_path):
 
-		Louise_obj = Louise()
-		Louise_obj.pick_fail_scp_out(mergee_path)
+		Luigi_obj = Luigi()
+		Luigi_obj.pick_fail_scp_out(mergee_path)
 		
 		if(Louise_obj.f_scp_name is not None):
 			return Louise_obj.f_scp_name
 	
 	def get_succ_script_node(self, merger_path):
 
-		Louise_obj = Louise()
-		Louise_obj.pick_succ_scp_out(merger_path)
+		Luigi_obj = Luigi()
+		Luigi_obj.pick_succ_scp_out(merger_path)
 		
 		if(Louise_obj.s_scp_name is not None):
 			return Louise_obj.s_scp_name
