@@ -12,7 +12,7 @@ and then there is possiblities that result_0.xml contains some failed scripts, w
 when finished, RIATest generate a new report we call it result_1.xml here.
 
   now we got two xml reports here, they are result_0.xml and result_1.xml, and we need just one report for analysis, so result_0 and result_1 should
-be merged to on final version, we name the final version of result_final.xml, that is really what we need.
+be merged to one final version, we name the final version of result_final.xml, that is really what we need.
 
   before you use this tool, please make sure python2.7 up already installed.
   
@@ -21,5 +21,5 @@ be merged to on final version, we name the final version of result_final.xml, th
   python ui.py -i result_1.xml result_0.xml -o result_final.xml
   
   P.S. (1)make sure there is no duplicated file named result_final.xml in the path
-       (2)newer file always be merged into elder one.
+       (2)newer file always be merged into elder one, like result_1 should be typed before result_0, this means that result_1 merged into result_0.
 
