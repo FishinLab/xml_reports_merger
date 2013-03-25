@@ -2,7 +2,7 @@ import sys
 import os
 from xml.dom import minidom
 
-class Louise:
+class Luigi:
 
   def __init__(self):
 
